@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slateboard Auth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/tokens.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+  </head>
+  <body class="auth-body">
+    <main class="auth-shell">
+      <section class="auth-card card">
+        <div class="auth-head">
+          <div>
+            <p class="eyebrow">Phase 2</p>
+            <h1>Slateboard Access</h1>
+          </div>
+          <a class="btn btn-secondary" href="./index.html">Home</a>
+        </div>
+
+        <div class="auth-tabs" role="tablist" aria-label="Authentication">
+          <button class="segment-button is-active" id="login-tab" type="button" data-auth-tab="login">
+            Login
+          </button>
+          <button class="segment-button" id="register-tab" type="button" data-auth-tab="register">
+            Register
+          </button>
+        </div>
+
+        <p class="auth-feedback" id="auth-feedback" hidden></p>
+
+        <form class="auth-form" id="login-form" data-form="login">
+          <label class="panel-label" for="login-email">Email</label>
+          <input class="brutal-input" id="login-email" type="email" autocomplete="email" required />
+
+          <label class="panel-label" for="login-password">Password</label>
+          <input class="brutal-input" id="login-password" type="password" autocomplete="current-password" required />
+
+          <div class="auth-actions">
+            <button class="btn btn-accent" type="submit">Login</button>
+          </div>
+        </form>
+
+        <form class="auth-form" id="register-form" data-form="register" hidden>
+          <label class="panel-label" for="register-name">Display name</label>
+          <input class="brutal-input" id="register-name" type="text" autocomplete="name" required />
+
+          <label class="panel-label" for="register-email">Email</label>
+          <input class="brutal-input" id="register-email" type="email" autocomplete="email" required />
+
+          <label class="panel-label" for="register-password">Password</label>
+          <input class="brutal-input" id="register-password" type="password" autocomplete="new-password" required />
+
+          <div class="auth-actions">
+            <button class="btn btn-accent" type="submit">Register</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script defer src="./js/auth.js"></script>
+  </body>
+</html>

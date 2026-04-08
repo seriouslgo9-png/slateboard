@@ -1,0 +1,51 @@
+:root {
+  --color-canvas: #fffdf5;
+  --color-accent: #ff6b6b;
+  --color-secondary: #ffd93d;
+  --color-muted: #c4b5fd;
+  --color-ink: #000000;
+  --color-white: #ffffff;
+  --color-sea: #2ec4b6;
+
+  --border-heavy: 4px solid var(--color-ink);
+  --shadow-hard: 8px 8px 0 var(--color-ink);
+  --shadow-hard-hover: 12px 12px 0 var(--color-ink);
+  --shadow-pressed: none;
+  --pill-radius: 9999px;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.75rem;
+  --font-size-2xl: clamp(2.5rem, 7vw, 5rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+
+  --tool-size: 4.25rem;
+  --panel-width: 18rem;
+  --topbar-height: 5rem;
+  --rail-offset: 1.5rem;
+  --panel-offset: 7.25rem;
+
+  --transition-fast: 120ms steps(2, end);
+  --transition-base: 180ms steps(3, end);
+
+  --pattern-grid:
+    linear-gradient(to right, transparent 0 31px, var(--color-ink) 31px 32px),
+    linear-gradient(to bottom, transparent 0 31px, var(--color-ink) 31px 32px);
+  --pattern-dot:
+    radial-gradient(circle, var(--color-ink) 1.2px, transparent 1.2px);
+  --pattern-halftone:
+    radial-gradient(circle at 1px 1px, var(--color-ink) 1px, transparent 0);
+}

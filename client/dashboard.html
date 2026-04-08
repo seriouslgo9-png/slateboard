@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slateboard Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/tokens.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+  </head>
+  <body class="dashboard-body">
+    <main class="dashboard-shell">
+      <header class="dashboard-head card">
+        <div>
+          <p class="eyebrow">Phase 2</p>
+          <h1>Your Boards</h1>
+        </div>
+        <div class="dashboard-head-actions">
+          <span class="status-badge" id="dashboard-user">Loading...</span>
+          <button class="btn btn-secondary" id="logout-button" type="button">Logout</button>
+          <button class="btn btn-accent" id="new-board-button" type="button">New board</button>
+        </div>
+      </header>
+
+      <section class="dashboard-grid" id="boards-grid"></section>
+      <p class="dashboard-empty card" id="dashboard-empty" hidden>No boards yet. Create the first one.</p>
+    </main>
+
+    <script defer src="./js/dashboard.js"></script>
+  </body>
+</html>
